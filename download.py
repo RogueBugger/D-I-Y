@@ -4,7 +4,8 @@ from selenium import webdriver
 pages = 10
 
 url = 'https://ww2.naruspot.tv/watch/naruto-episode-1-dubbed/'
-driver = webdriver.Chrome()
+path_to_chrome = ''
+driver = webdriver.Chrome(path)
 for page in range(1,pages):
     url = f'https://ww2.naruspot.tv/watch/naruto-episode-{page}-dubbed/'
     driver.get(url)
